@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+    box-shadow: 0px 1px 10px black;
+}
+.logo{
+    width: 120px;
+}
+
+
+.nav-item{
+    display: flex;    
+    text-align: center;
+    justify-content: center;
+
+}
+.nav-item span{
+    font-size: 13px;
+}
+
+.li-fs{
+    font-size: 13px;
+}
+.drop{
+    font-size: 13px;
+}
+.background1{
+    background-image: url('https://i.pinimg.com/originals/9c/bd/67/9cbd67b19efb3f6b10a9c8a00e256f0d.jpg');
+    width: 100%;
+    height: 140vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.background-color{
+    background-color: rgba(0, 0, 0, 0.61);
+    width: 100%;
+    height: 140vh;
+    background-attachment: fixed;
+}
+.check{
+    justify-content: space-between;
+}
+.container{
+    background-color: white;
+}
+.smalll{
+    font-size: 13px;
+}
+.cards:hover{
+    background-color: rgb(227, 227, 227);
+}
+
+.city{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 15px;
+    border: 1px solid blue;
+    padding: 3px;
+    border-radius: 10px;
+}
+.choose{
+    font-size: 11px;
+
+}
+.choose11{
+    font-size: 11px;
+    font-weight: bold;
+    
+    
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.choose1{
+    padding: 6px;
+    border: 1px solid white;
+    background-color: rgb(236, 235, 235);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.choose22{
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.choose2{
+    font-size: 11px;
+    padding-right: 3px;
+    border: 1px solid white;
+    background-color: rgb(236, 235, 235);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    border-radius: 8px;
+    
+}
+.search{
+    justify-content: center;
+    text-align: center;
+}
+.explore{
+    color: white;
+}
+
+.background-2{
+    background-color: rgb(213, 213, 213);
+    width: 100%;
+    height: 445vh;
+    
+}
+.container-2{
+    background-color: white;
+}
+.offer{
+    font-size: 34px;
+    font-weight: bold;
+}
+.offers{
+    text-decoration: none;
+    color: black;
+
+}
+.offers:hover{
+    font-weight: bold;
+}
+.domestic p{
+    font-size: 13px;
+}
+.domestic hr{
+    width: 50px;
+    border-top: 3px solid;
+    color: red;
+}
+.ic1{
+    box-shadow: 1px 1px 5px;
+}
+.offer-line{
+    width: 100%;
+    color: black;
+    border-top: 3px solid ;
+    
+}
+.view{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.background-3{
+    background-color: rgb(213, 213, 213);
+    width: 100%;
+    height: 150vh;
+}
+
+.download{
+    background-color: white;
+}
+.dwnl-logo{
+    width: 100px;
+}
+.number{
+    width: 300px;
+    border: 1px solid;
+    height: 45px;
+}
+.dwlbtton{
+    border: 2px solid  rgb(0, 144, 233);
+    background-color: white;
+    color: rgb(0, 144, 233);
+    font-weight: bold;
+    padding: 9px;
+    width: 150px;
+    
+}
+.dwlbtton:hover{
+    background-color: rgb(0, 144, 233);
+    color: white;
+}
+.inside span{
+    font-size: 10px;
+    margin-top: 10px;
+}
+.inside p{
+    font-size: 12px;
+}
+.playstore{
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.buttonn{
+    width: 200px;
+    height: 50px;
+}
+.button-1{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.apple{
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.interna span{
+    font-size: 12px;
+}
+.interna a{
+    font-size: 12px;
+    text-decoration: none;
+}
+.background-33{
+    background-color: white;
+    box-shadow: 1px 1px 5px;
+}
+.chennai p{
+    font-size: 13px;
+}
+.container-5{
+    background-color: white;
+}
+.questions{
+    background-color: rgb(188, 188, 188);
+    width: 100%;
+    height: 100vh;
+}
+.question1 p{
+    font-size: 11px;
+}
+
+.end{
+    background-color: black;
+    width: 100%;
+    height: 35vh;
+
+}
+
+.credit p{
+    color: white;
+    justify-content: end;
+    display: flex;
+}
+
+.go-up{
+    background-color: white;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+/* flights page */
+
+.f-main{
+    background-image: url('https://wallpapers.com/images/featured/4k-plane-39efmsuz0fhub1c3.jpg');
+    width: 100%;
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.f-bg{
+    background-color: rgba(0, 0, 0, 0.436);
+    width: 100%;
+    height: 120vh;
+}
+
+.domestic{
+    background-color: white;
+    border-radius: 5px;
+}
+.offer-img{
+    width: 100%;
+    height: 250px;
+
+}
+
+.h-main{
+    background-image: url('https://wallpapercave.com/wp/wp5430313.jpg');
+    width: 100%;
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.h-bg{
+    background-color: rgba(0, 0, 0, 0.457);
+    width: 100%;
+    height: 120vh;
+}
+.h-logo{
+    width: 180px;
+    height: 180px;
+}
+.h-bg2{
+    background-color: rgb(172, 172, 172);
+    width: 100%;
+    height: 50vh;
+}

@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel website</title>
+    <!-- style.css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- fontawsm cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- google fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <body>
+    <!-- nav section -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-2 " id="top">
+        <div class="container-fluid">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Makemytrip_logo.svg" alt="" class="logo me-4">
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 me-3">
+              <li class="nav-item me-3">
+                <a class="nav-link" aria-current="page" href="./flights.html"><i class="aero fa-solid fa-plane fa-rotate-by fs-5" style="color: #000000; --fa-rotate-angle: 330deg;"></i><br>
+                    <span>Flight</span></a>
+                
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="./hotel.html"><i class="fa-solid fa-hotel fs-5" style="color: #000000;"></i><br>
+                <span>Hotels</span></a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#"><i class="fa-solid fa-house" style="color: #030303;"></i><br>
+                <span>Homestays</span></a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#"><i class="fa-solid fa-train" style="color: #000000;"></i><br>
+                <span>Trains</span></a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#"><i class="fa-solid fa-bus" style="color: #000000;"></i><br>
+                <span>Buses</span></a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#"><i class="fa-solid fa-taxi" style="color: #000000;"></i><br>
+                <span>Cabs</span></a>
+              </li>
+              
+              
+            </ul>
+            <form class="d-flex me-4">
+              <li class="drop nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Country
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="ms-2 li-fs dropdown-item" href="#"><img class="w-25" src="https://static.vecteezy.com/system/resources/previews/015/309/568/non_2x/india-waving-flag-realistic-transparent-background-free-png.png" alt=""> India</a></li>
+                  <li><a class="ms-2 li-fs dropdown-item" href="#"><img class="w-25" src="https://static.vecteezy.com/system/resources/previews/015/309/503/non_2x/united-arab-emirates-waving-flag-realistic-transparent-background-free-png.png" alt=""> UAE</a></li>
+                  <li><a class="ms-2 li-fs dropdown-item" href="#"><img class="w-25" src="https://static.vecteezy.com/system/resources/previews/008/470/078/non_2x/american-wavy-flag-clipart-free-png.png" alt=""> USA</a></li>
+                </ul>
+              </li>
+              <li class="drop nav-item dropdown">
+                <a class="nav-link dropdown-toggle ms-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Language
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="text-center li-fs dropdown-item" href="#">English</a></li>
+                  <li><a class="text-center li-fs dropdown-item" href="#">हिन्दी</a></li>
+                  <li><a class="text-center li-fs dropdown-item" href="#">தமிழ்</a></li>
+                </ul>
+              </li>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- main 1 -->
+      <div class="background1">
+      <div class="background-color p-5">
+      <div class="container mt-4 p-4 rounded-4">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled d-flex check">
+              <li>One Way <input  type="checkbox"></li>
+              <li>Round Trip <input  type="checkbox"></li>
+              <li>Multi City <input  type="checkbox"></li>
+            </ul>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <span class="">Book International and Domestic Flights</span>
+          </div>
+        </div>
+        
+        <div class="card-group ">
+          <div class="card cards">
+            <div class="card-body ">
+              <p>From</p>
+              <h2 class="card-title">Delhi</h2> <br>
+              <p class="card-text smalll">DEL, Delhi Airport India</p>
+            </div>
+          </div>
+          <div class="card cards">
+            <div class="card-body">
+              <p>To</p>
+              <h2 class="card-title">Banglore</h2> <br>
+              <p class="card-text smalll">BLR, Bengaluru International Airport India</p>
+            </div>
+          </div>
+          <div class="card cards">
+            <div class="card-body ">
+              <p>Departure <i class="fa-solid fa-chevron-down" style="color: #005cf0;"></i></p>
+              <p class="fs-3"><span class="fs-1">24</span> Mar'24</p>
+              <p class="card-text smalll">Sunday</p>
+            </div>
+          </div>
+          <div class="card cards">
+            <div class="card-body">
+              <p>Travellers & Class <i class="fa-solid fa-chevron-down" style="color: #005cf0;"></i></p>
+              <p class="fs-3"><span class="fs-1">1</span> Traveller</p>
+              <p class="card-text smalll">Economy/Premium Economy</p>
+            </div>
+          </div>
+        </div> <br>
+
+        <div class="card-group">
+          <div class="card cards">
+            <div class="card-body">
+              <p>From</p>
+              <h2 class="card-title">Banglore</h2> <br>
+              <p class="card-text smalll">BLR, Bengaluru International Airport India</p>
+            </div>
+          </div>
+          <div class="card cards">
+            <div class="card-body">
+              <p>To</p>
+              <h2 class="card-title">Select City</h2> <br>
+            </div>
+          </div>
+          <div class="card cards">
+            <div class="card-body ">
+              <p>Departure <i class="fa-solid fa-chevron-down" style="color: #005cf0;"></i></p>
+              <p class="fs-3"><span class="fs-1">25</span> Mar'24</p>
+              <p class="card-text smalll">Sunday</p>
+            </div>
+          </div>
+          <div class="card cards">
+            <div class="card-body mt-5">
+             <a class="city" href="">+ ADD ANOTHER CITY</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-sm-12 d-flex justify-space-between p-1 choose mt-4">
+            <div class="choose11"> <label for="">Select A Fare Type: </label></div>
+            <div class="choose1"><input type="radio" name="Select A Fare Type:"><label for="" >Regular Fares</label></div>
+            <div class="choose1"><input type="radio" name="Select A Fare Type:"><label for=""   title="Applicable for serving and retired personnel of Armed Forces and Paramilitary Forces, their recognised dependants like spouses and children, and war widows. It is mandatory to show a valid ID or dependant card at the airport, without which boarding might be denied.">Armed Forces Fares</label></div>
+            <div class="choose1"><input type="radio" name="Select A Fare Type:"><label for="" title="Only students above 12 years of age are eligible for special fares and/or additional baggage allowances. Carrying valid student ID cards and student visas (where applicable) is mandatory, else the passenger may be denied boarding or asked to pay for extra baggage.">Student Fares</label></div>
+            <div class="choose1"><input type="radio" name="Select A Fare Type:"><label for="" title="Only senior citizens above the age of 60 years can avail this special fare. It is mandatory to produce proof of Date of Birth at the airport, without which prevailing fares will be charged.">Senior Citizen Fares</label></div>
+            <div class="choose1"><input type="radio" name="Select A Fare Type:"><label for="" title="Applicable only for medical personnel. It is mandatory to show a valid ID at the airport, without which boarding may be denied.">Doctors & Nurses Fares</label></div>
+          </div>
+          <div class="col-md-2 col-sm-12"></div>
+          <div class="col-md-4 col-sm-12 d-flex mt-4 justify-space-between ">
+            <div class="choose22">Trending Searches: </div>
+            <div class="choose2 p-2">Chennai <i class="fa-solid fa-arrow-right" style="color: #005eff;"></i> Hyderabad</div>
+            <div class="choose2 p-2">Delhi <i class="fa-solid fa-arrow-right" style="color: #005eff;"></i> Paris</div>
+          </div>
+        </div>
+
+        <div class="search pt-3">
+            <button class=" btn btn-primary rounded-5 p-2 pe-5 ps-5 fs-4 ">SEARCH</button>
+        </div>
+
+      </div>
+
+      <div class="text-center fs- explore mt-5"><span><i class="fa-solid fa-angle-down" style="color: #ffffff;"></i> Explore More <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i></span></div>
+
+      </div>
+      </div>
+
+      <!-- main 2 -->
+      <div class="background-2 p-5">
+        <div class="container-2 p-5 rounded-4">
+          <div class="options mb-5">
+          <span class="offer">Offers</span> 
+          <a class="offers ms-4 me-4" href="#bankoffers"> Bank Offers</a>
+          <a class="offers me-4" href="#holidays"> Holidays</a>
+          <a class="offers me-4" href="#trains"> Trains</a>
+          <a class="offers me-4" href="#cabs"> Cabs</a>
+          </div>
+
+          <div id="bankoffers" class="mb-4">
+            <button class="btn ic1 me-5 ">
+              <div class=" mb-3" style="max-width: 480px;">
+               <div class="row domestic">
+                <div class="col-md-4 col-sm-12">
+                  <img class="p-3" src="https://promos.makemytrip.com/notification/xhdpi//116X116-icici-df-13102023.jpg?im=Resize=(134,134)" alt="">
+                  <p>T&C's Apply</p>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                  <p class="mt-3">ICICI</p>
+                  <h5>Grab NOW: Flat 12% off* on Domestic Flights!</h5>
+                  <span><hr></span>
+                  <p>Valid on ICICI Bank Credit Cards, Credit Cards EMI and Debit Cards</p>
+                  <a class="view" href="">VIEW DETAILS</a>
+                </div>
+               </div>
+              </div>
+            </button>
+            <button class="btn ic1">
+              <div class=" mb-3" style="max-width: 480px;">
+               <div class="row domestic">
+                <div class="col-md-4 col-sm-12">
+                  <img class="p-3" src="https://promos.makemytrip.com/notification/xhdpi//116X116-icici-dh-28062023.jpg?im=Resize=(134,134)" alt="">
+                  <p>T&C's Apply</p>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                  <p class="mt-3">ICICI</p>
+                  <h5>Grab Flat 15% OFF* on 3, 4 & 5-Star Stays in In India</h5>
+                  <span><hr></span>
+                  <p>& treat yourself to a refreshing, luxurios break.</p>
+                  <a class="view" href="">VIEW DETAILS</a>
+                </div>
+               </div>
+              </div>
+            </button>
+          </div>
+
+          <div id="bankoffers" class="mb-5">
+            <button class="btn ic1 me-5">
+              <div class=" mb-3" style="max-width: 480px;">
+               <div class="row domestic">
+                <div class="col-md-4">
+                  <img class="p-3" src="https://promos.makemytrip.com/notification/xhdpi//116X116-icici-ih-13102023.jpg?im=Resize=(134,134)" alt="">
+                  <p>T&C's Apply</p>
+                </div>
+                <div class="col-md-8">
+                  <p class="mt-3">ICICI</p>
+                  <h5>Grab Flat 15% OFF* on 3, 4 & 5-Star Stays in In India</h5>
+                  <span><hr></span>
+                  <p>for your next international trip.</p>
+                  <a class="view" href="">VIEW DETAILS</a>
+                </div>
+               </div>
+              </div>
+            </button>
+            <button class="btn ic1">
+              <div class=" mb-3" style="max-width: 480px;">
+               <div class="row domestic">
+                <div class="col-md-4">
+                  <img class="p-3" src="https://promos.makemytrip.com/notification/xhdpi//116X116-icici-homestray-13102023.jpg?im=Resize=(134,134)" alt="">
+                  <p>T&C's Apply</p>
+                </div>
+                <div class="col-md-8">
+                  <p class="mt-3">ICICI</p>
+                  <h5>Grab Flat 15% off* on Homestays in India</h5>
+                  <span><hr></span>
+                  <p>& enjoy 100% privacy and freedom on your next trip.</p>
+                  <a class="view" href="">VIEW DETAILS</a>
+                </div>
+               </div>
+              </div>
+            </button>
+          </div>
+
+         
+
+
+          <hr class="offer-line mb-5 ">
+
+
+         
+
+          <div id="holidays" class="mb-4">
+            <button class="btn ic1 me-5">
+              <div class=" mb-3" style="max-width: 480px;">
+               <div class="row domestic">
+                <div class="col-md-4">
+                  <img class="p-3" src="https://promos.makemytrip.com/notification/xhdpi//Desktop-EuropeHol-18Mar.jpg?im=Resize=(134,134)" alt="">
+                  <p>T&C's Apply</p>
+                </div>
+                <div class="col-md-8">
+                  <h5 class="mt-3">Experience Europe with The Best!</h5>
+                  <span><hr></span>
+                  <p>Book packages starting @₹1,50,000incl. flights.</p>
+                  <a class="view" href="">BOOK NOW</a>
+                </div>
+               </div>
+              </div>
+            </button>
+            <button class="btn ic1">
+              <div class=" mb-3" style="max-width: 480px;">
+               <div class="row domestic">
+                <div class="col-md-4">
+                  <img class="p-3" src="https://promos.makemytrip.com/notification/xhdpi//Desktop-Hol-Packages-Villa-11Oct.jpg?im=Resize=(134,134)" alt="">
+                  <p>T&C's Apply</p>
+                </div>
+                <div class="col-md-8">
+                  <h5 class="mt-3">Intoducing Holidays Packages with Villas</h5>
+                  <span><hr></span>
+                  <p>Explore unique stays option like villas, homestays, cottages, tents, beach huts, etc.</p>
+                  <a class="view" href="">BOOK NOW</a>
+                </div>
+               </div>
+              </div>
+            </button>
+          </div>
+
+          <div id="holidays" class="mb-5">
+            <button class="btn ic1 me-5">
+              <div class=" mb-3" style="max-width: 480px;">
+               <div class="row domestic">
+                <div class="col-md-4">
+                  <img class="p-3" src="https://promos.makemytrip.com/notification/xhdpi//offer-11032024.jpg?im=Resize=(134,134)" alt="">
+                  <p>T&C's Apply</p>
+                </div>
+                <div class="col-md-8">
+                  <h5 class="mt-3">Grab Up to 35%OFF* + Additional Savings on EMI</h5>
+                  <span><hr></span>
+                  <p>on flights, hotels and holidays packages for pocket-friendly travel bookings. </p>
+                  <a class="view" href="">BOOK NOW</a>
+                </div>
+               </div>
+              </div>
+            </button>
+            <button class="btn ic1">
+              <div class=" mb-3" style="max-width: 480px;">
+               <div class="row domestic">
+                <div class="col-md-4">
+                  <img class="p-3" src="https://promos.makemytrip.com/images//desktop-YesBank-070324.jpg?im=Resize=(134,134)" alt="">
+                  <p>T&C's Apply</p>
+                </div>
+                <div class="col-md-8">
+                  <h5 class="mt-3">Grab Up to 35%OFF* on Holiday Packages</h5>
+                  <span><hr></span>
+                  <p>and plan your nect vacay NOW!</p>
+                  <a class="view" href="">BOOK NOW</a>
+                </div>
+               </div>
+              </div>
+            </button>
+          </div>
+
+          <hr class="offer-line mb-5">
+
+          <div id="trains" class="mb-4">
+            <button class="btn ic1 me-5">
+              <div class=" mb-3" style="max-width: 480px;">
+               <div class="row domestic">
+                <div class="col-md-4">
+                  <img class="p-3" src="https://promos.makemytrip.com/appfest/xhdpi//Desktop-SuhanaSafar-18Mar.jpg?im=Resize=(134,134)" alt="">
+                  <p>T&C's Apply</p>
+                </div>
+                <div class="col-md-8">
+                  <h5 class="mt-3">FOR COLOURFUL LONG WEEKEND TRIPS:</h5>
+                  <span><hr></span>
+                  <p>Grab Delightful Deals on buses, cabs & trains, this Holi</p>
+                  <a class="view" href="">BOOK NOW</a>
+                </div>
+               </div>
+              </div>
+            </button>
+            <button class="btn ic1">
+              <div class=" mb-3" style="max-width: 480px;">
+               <div class="row domestic">
+                <div class="col-md-4">
+                  <img class="p-3" src="https://promos.makemytrip.com/appfest/xhdpi//Train-Desktop-SuhanaSafar-19Mar.jpg?im=Resize=(134,134)" alt="">
+                  <p>T&C's Apply</p>
+                </div>
+                <div class="col-md-8">
+                  <h5 class="mt-3">Enjoy the Most Remarkable Experience!</h5>
+                  <span><hr></span>
+                  <p>Grab Up to 25% OFF* on CGH Earth Experience Hotels</p>
+                  <a class="view" href="">BOOK NOW</a>
+                </div>
+               </div>
+              </div>
+            </button>
+          </div>
+
+          <div id="trains" class="mb-5">
+            <button class="btn ic1 me-5">
+              <div class=" mb-3" style="max-width: 480px;">
+               <div class="row domestic">
+                <div class="col-md-4">
+                  <img class="p-3" src="https://promos.makemytrip.com/appfest/xhdpi//Desktop-Train-FestiveCalendar-22Nov.jpg?im=Resize=(134,134)" alt="">
+                  <p>T&C's Apply</p>
+                </div>
+                <div class="col-md-8">
+                  <h5 class="mt-3">BOOKINGS ARE OPEN NOW!</h5>
+                  <span><hr></span>
+                  <p>Plan Your Next Train Journey for the upcoming long weekends</p>
+                  <a class="view" href="">BOOK NOW</a>
+                </div>
+               </div>
+              </div>
+            </button>
+            <button class="btn ic1">
+              <div class=" mb-3" style="max-width: 480px;">
+               <div class="row domestic">
+                <div class="col-md-4">
+                  <img class="p-3" src="https://promos.makemytrip.com/notification/xhdpi//train04-116x116-06012021.jpg?im=Resize=(134,134)" alt="">
+                  <p>T&C's Apply</p>
+                </div>
+                <div class="col-md-8">
+                  <h5 class="mt-3">TRIP GUARANTEE ON TRAIN!</h5>
+                  <span><hr></span>
+                  <p>Waitlisted tickets no more. Get a confirmed ticket or a free upgrade to flights, cabs & more.</p>
+                  <a class="view" href="">KNOW MORE</a>
+                </div>
+               </div>
+              </div>
+            </button>
+          </div>
+
+          <hr class="offer-line mb-5">
+
+          <div id="cabs" class="mb-4">
+            <button class="btn ic1 me-5">
+              <div class=" mb-3" style="max-width: 480px;">
+               <div class="row domestic">
+                <div class="col-md-4">
+                  <img class="p-3" src="https://promos.makemytrip.com/notification/xhdpi//116X116-simpl-2-02112023.jpg?im=Resize=(134,134)" alt="">
+                  <p>T&C's Apply</p>
+                </div>
+                <div class="col-md-8">
+                  <h5 class="mt-3">Now Get FLAT 10%OFF*</h5>
+                  <span><hr></span>
+                  <p>on domestic hotels, outstation cabs & buses for your next trip.</p>
+                  <a class="view" href="">BOOK NOW</a>
+                </div>
+               </div>
+              </div>
+            </button>
+            <button class="btn ic1">
+              <div class=" mb-3" style="max-width: 480px;">
+               <div class="row domestic">
+                <div class="col-md-4">
+                  <img class="p-3" src="https://promos.makemytrip.com/notification/xhdpi//OS-cab-Desktop-SuhanaSafar-19Mar.jpg?im=Resize=(134,134)" alt="">
+                  <p>T&C's Apply</p>
+                </div>
+                <div class="col-md-8">
+                  <h5 class="mt-3">Get Up to ₹500 off* on Outstation Cabs</h5>
+                  <span><hr></span>
+                  <p>& fill your Holi long weekend with colourful trips</p>
+                  <a class="view" href="">BOOK NOW</a>
+                </div>
+               </div>
+              </div>
+            </button>
+          </div>
+
+          <div id="cabs" class="mb-5">
+            <button class="btn ic1 me-5">
+              <div class=" mb-3" style="max-width: 480px;">
+               <div class="row domestic">
+                <div class="col-md-4">
+                  <img class="p-3" src="https://promos.makemytrip.com/appfest/xhdpi//Desktop-Ayodhya-28Dec.jpg?im=Resize=(134,134)" alt="">
+                  <p>T&C's Apply</p>
+                </div>
+                <div class="col-md-8">
+                  <h5 class="mt-3">AYODHA SPECIAL:</h5>
+                  <span><hr></span>
+                  <p>Enjoy EPIC Offers on booking buses, cabs & trains with us</p>
+                  <a class="view" href="">BOOK NOW</a>
+                </div>
+               </div>
+              </div>
+            </button>
+            <button class="btn ic1">
+              <div class=" mb-3" style="max-width: 480px;">
+               <div class="row domestic">
+                <div class="col-md-4">
+                  <img class="p-3" src="https://promos.makemytrip.com/notification/xhdpi//116X116-mobikwik-30052023.jpg?im=Resize=(134,134)" alt="">
+                  <p>T&C's Apply</p>
+                </div>
+                <div class="col-md-8">
+                  <h5 class="mt-3">FOR THIS TRAVEL SEASON:</h5>
+                  <span><hr></span>
+                  <p>Grab FLAT 10%OFF* on Domestic Flights, Hotels, Cabs & Buses </p>
+                  <a class="view" href="">VIEW DETAILS</a>
+                </div>
+               </div>
+              </div>
+            </button>
+          </div>
+          
+          
+        </div>
+      </div>
+
+      <!-- main 3 -->
+      <div class="background-3 px-5 ">
+
+        <!-- GUID LANG -->
+
+        <div class="container-4 ps-5">
+          <div class="row ">
+            
+            <div class="col-md-3 background-33 rounded-3 ">
+              <div class="row">
+                <div class="col-4">
+                  <img class="w-100 mt-3" src="https://promos.makemytrip.com/notification/xhdpi/Vande-Flight-10072020.png" alt="">
+                </div>
+                <div class="col-8 interna mt-2">
+                  <span>Planning to book an international flight?</span> <br>
+                  <a href="">Check Travel Guidelines</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-3 background-33 rounded-3">
+              <div class="row">
+                <div class="col-4">
+                  <img class="w-100 mt-3" src="https://promos.makemytrip.com/Growth/Images/B2C/2x/language1@2x_20210901.png" alt="">
+                </div>
+                <div class="col-8 interna mt-2">
+                  <span>We are now available in हिन्दी!</span> <br>
+                  <a href="">Change Language</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-3 background-33 rounded-3">
+              <div class="row">
+                <div class="col-4">
+                  <img class="w-100 mt-3" src="https://promos.makemytrip.com/notification/xhdpi/web-check-in-116x116-23062020.png" alt="">
+                </div>
+                <div class="col-8 interna mt-2">
+                  <span>Complete your web check-in on MakeMyTrip in easy steps.</span> <br>
+                  <a href="">Know More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DOWNLOAD APP -->
+
+        <div class="container-3 py-5">
+        <div class="download rounded-5 p-5">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-3">
+                  <img class="dwnl-logo" src="https://purepng.com/public/uploads/large/purepng.com-downloads-icon-android-lollipopsymbolsiconsgooglegoogle-iconsandroid-lollipoplollipop-iconsandroid-50-7215225971773lbp1.png" alt="">
+                </div>
+                <div class="col-9">
+                  <h2>Download App Now!</h2>
+                  <p>Use code WELCOMEMMT and get FLAT 12% OFF* on your first domestic flight booking</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <input class="number rounded-0 p-2 mt-3" placeholder="+91 - Enter Mobile Number" type="number"><button class="  rounded-0 dwlbtton">GET APP LINK</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+              <button class="button-1">
+                <div class="row buttonn">
+                  <div class="col-3 buttonn">
+                    <img class="playstore" src="https://freelogopng.com/images/all_img/1664285914google-play-logo-png.png" alt="" >
+                  </div>
+                  <div class="col-9 inside">
+                    <span>GET IT ON</span>
+                    <p>Google Play Store</p>
+                  </div>
+                </div>
+              </button>
+              <button class="button-1 mt-3">
+                <div class="row buttonn">
+                  <div class="col-3 buttonn">
+                    <img class="apple" src="https://i.pinimg.com/736x/57/52/da/5752dae6cc7b47b418e4bb7cbac736ba.jpg" alt="" >
+                  </div>
+                  <div class="col-9 inside">
+                    <span>GET IT ON</span>
+                    <p>App Store</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div class="col-md-2">
+              <img class="w-75 ms-4" src="https://promos.makemytrip.com/AltAcco/images/qr-code.png" alt="">
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- FLIGHTS -->
+
+        <div class="container-5 p-5 rounded-5">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="location mb-3">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="http://promos.makemytrip.com/images/50x50-Other-23052019.png" alt="" class="rounded-5">
+                  </div>
+                  <div class="col-10 chennai">
+                    <h6>Chennai</h6>
+                    <p>Via - Delhi, Mumbai, Coimbatore, Madurai</p>
+                  </div>
+                </div>
+              </div>
+              <div class="location"><div class="location mb-3">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="http://promos.makemytrip.com/images/50x50-Ooty-23052019.png" alt="" class="rounded-5">
+                  </div>
+                  <div class="col-10 chennai">
+                    <h6>Hyderabad Flights</h6>
+                    <p>Via - Chennai, Mumbai, Bangalore, Delhi</p>
+                  </div>
+                </div>
+              </div></div>
+              <div class="location">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="https://promos.makemytrip.com/store/SingaporeDT.JPG" alt="" class="rounded-5">
+                  </div>
+                  <div class="col-10 chennai">
+                    <h6>Kolkata Flights</h6>
+                    <p>Via - Delhi, Mumbai, Bangalore, Pune</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="location mb-3">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="https://promos.makemytrip.com/store/GoaDT.JPG" alt="" class="rounded-5">
+                  </div>
+                  <div class="col-10 chennai">
+                    <h6>Goa Flights</h6>
+                    <p>Via - Delhi , Mumbai, Bangalore, Ahmedabad</p>
+                  </div>
+                </div>
+              </div>
+              <div class="location"><div class="location mb-3">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="https://promos.makemytrip.com/store/DelhiDT.JPG" alt="" class="rounded-5">
+                  </div>
+                  <div class="col-10 chennai">
+                    <h6>Delhi Flights</h6>
+                    <p>Via - Mumbai, Pune, Bangalore, Chennai</p>
+                  </div>
+                </div>
+              </div></div>
+              <div class="location">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="https://promos.makemytrip.com/store/BangaloreDT.JPG" alt="" class="rounded-5">
+                  </div>
+                  <div class="col-10 chennai">
+                    <h6>Bangalore Flights</h6>
+                    <p>Via - Delhi, Pune, Mumbai, Kolkata</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="location mb-3">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="https://promos.makemytrip.com/store/MumbaiDT.JPG" alt="" class="rounded-5">
+                  </div>
+                  <div class="col-10 chennai">
+                    <h6>Mumbai Flights</h6>
+                    <p>Via - Delhi, Bangalore, Chennai, Ahmedabad</p>
+                  </div>
+                </div>
+              </div>
+              <div class="location"><div class="location mb-3">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="https://promos.makemytrip.com/store/PuneDT.JPG" alt="" class="rounded-5">
+                  </div>
+                  <div class="col-10 chennai">
+                    <h6>Pune Flights</h6>
+                    <p>Via - Delhi, Bangalore, Chennai, Ahmedabad</p>
+                  </div>
+                </div>
+              </div></div>
+              <div class="location">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="https://promos.makemytrip.com/store/JaipurDT.JPG" alt="" class="rounded-5">
+                  </div>
+                  <div class="col-10 chennai">
+                    <h6>Jaipur Flights</h6>
+                    <p>Via - Mumbai, Delhi, Pune, Bangalore</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUESTION -->
+
+      <div class="questions">
+        <div class="row pt-5 px-5">
+          <div class="col-md-5 question1">
+            <h6>Q - How do I make a flight booking on MakeMyTrip?</h6>
+            <p class="py-3">A: You can book a flight on MakeMyTrip in five easy steps: Head over to the MakeMyTrip flight booking page, Enter your departure and arrival destinations, Select your air travel dates, Choose from our wide range of cheap flights based on your airfare preferences, Click on ‘Book Now’ and your air flight booking is done. Alternatively, you can also use the MakeMyTrip app for your flight ticket booking. Download the MakeMyTrip app, Put in the details i.e. date of journey, departure and arrival destinations, travel class of your choice, Select on your best comfortable option and click on 'Book Now'.</p>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-5 question1">
+            <h6>Q - Can I avail domestic flight offers on MakeMyTrip?</h6>
+            <p class="pt-3">A: Of course, you can. While making domestic flight bookings, you can avail any special offer that is active at that time. In accordance with the offer selected, a listing of eligible cheapest flights would show up on your screen. You can then apply the price filter and click on the downwards arrow, following which budget-friendly flights would start showing up in ascending order from the top (lowest price on top).</p>
+          </div>
+        </div>
+        <div class="px-5"><hr></div>
+      
+      
+        <div class="row p-5">
+          <div class="col-md-5 question1">
+            <h6>Q - How do I make a flight booking on MakeMyTrip?</h6>
+            <p class="py-3">A: You can book a flight on MakeMyTrip in five easy steps: Head over to the MakeMyTrip flight booking page, Enter your departure and arrival destinations, Select your air travel dates, Choose from our wide range of cheap flights based on your airfare preferences, Click on ‘Book Now’ and your air flight booking is done. Alternatively, you can also use the MakeMyTrip app for your flight ticket booking. Download the MakeMyTrip app, Put in the details i.e. date of journey, departure and arrival destinations, travel class of your choice, Select on your best comfortable option and click on 'Book Now'.</p>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-5 question1">
+            <h6>Q - Can I avail domestic flight offers on MakeMyTrip?</h6>
+            <p class="py-3">A: Of course, you can. While making domestic flight bookings, you can avail any special offer that is active at that time. In accordance with the offer selected, a listing of eligible cheapest flights would show up on your screen. You can then apply the price filter and click on the downwards arrow, following which budget-friendly flights would start showing up in ascending order from the top (lowest price on top).</p>
+          </div>
+        </div>
+        <div class="px-5"><hr></div>
+      </div>
+
+      <!-- END -->
+
+      <div class="end">
+        <div class="row p-5">
+          <div class="col-md-2 p-2">
+            <div class="row ">
+              <div class="col-md-5 "><a class="fs-2" href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a> </div>
+              <div class="col-md-2"></div>
+              <div class="col-md-5"><a class="fs-2" href=""><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 text-center">
+            <a href="#top"><i class="fa-solid fa-arrow-up go-up" style="color: #000000;"></i></a>
+          </div>
+          <div class="col-md-3 credit">
+            <p>© 2024 MAKEMYTRIP PVT. LTD.</p>
+            <p>Country India USA UAE</p>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
